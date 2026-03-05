@@ -79,11 +79,56 @@ Key Concepts
 ### Tic Tac Toe Game (O and X)
 
 This program implements the classic Tic-Tac-Toe game using the symbols O and X. Two players take turns placing their symbols on a 3×3 grid. The objective of the game is to form a straight line of three identical symbols either horizontally, vertically, or diagonally.
-
 The program checks the board after every move to determine whether a player has won or if the game results in a draw.
-
 Key Concepts
-
 -> Game state representation
 -> Turn-based decision making
--> Win condition checking and game logic
+-> Win condition checking and game logic### Air Quality Monitoring Agent: 
+
+This program implements the classic Tic-Tac-Toe game using the symbols O and X. Two players take turns placing their symbols on a 3×3 grid. The objective of the game is to form a straight line of three identical symbols either horizontally, vertically, or diagonally.
+
+The program checks the board after every move to determine whether a player has won or if the game results in a draw.
+___
+### Project Overview:
+
+This project demonstrates a Rule-Based Simple Reflex Agent that evaluates the Air Quality Index (AQI) using environmental pollutant readings. The program reads pollutant concentrations from the user and determines the corresponding air quality condition.
+
+In Artificial Intelligence, a Simple Reflex Agent makes decisions only based on the current percept (input) and applies predefined condition–action rules. It does not store previous states or perform learning.
+
+In this project, pollutant values act as sensor inputs, and the agent immediately maps these inputs to an AQI classification using rule conditions.
+
+
+### Pollutants Considered:
+
+The system analyzes four major pollutants that influence air quality: PM2.5 – Fine particulate matter smaller than 2.5 micrometers PM10 – Particulate matter smaller than 10 micrometers NO₂ – Nitrogen dioxide gas from combustion sources CO – Carbon monoxide released from vehicles and burning fuels
+
+These pollutants are combined to estimate the overall AQI value.
+
+### Air Quality Classification:
+
+0 – 50 Clean Air
+51 – 100 Acceptable
+101 – 150 Sensitive Groups Risk
+151 – 200 Poor
+Above 200 Very Dangerous
+
+### Sample Execution:
+
+---- Air Quality Monitoring System ----
+
+Enter PM2.5 concentration: 70
+Enter PM10 concentration: 110
+Enter NO2 concentration: 55
+Enter CO concentration: 1.2
+
+Calculated AQI: 77.4 Air Condition: Acceptable
+
+### Artificial Intelligence Concept Demonstrated:
+
+This project illustrates the Simple Reflex Agent model.
+
+Agent Components: Sensors: Collect pollutant levels (PM2.5, PM10, NO₂, CO) Rules: Condition-based AQI classification Actuator/Output: Displays AQI value and air quality category
+
+The agent operates using the rule: IF AQI value falls in a specific range THEN assign corresponding air quality condition
+
+Because the decision depends only on the current input, the system represents a Simple Reflex Agent in Artificial Intelligence.
